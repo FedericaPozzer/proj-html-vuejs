@@ -20,10 +20,18 @@
     height: 10rem;
 }
 
+footer {
+    height: 70rem;
+}
+
 
 /*** ALL ***/
 img {
     height: 100%;
+}
+
+.img-container {
+    height: 9.5rem;
 }
 
 ul {
@@ -49,6 +57,10 @@ ul a {
 
 .tex-smaller {
     font-size: .6rem;
+}
+
+.bb {
+    border-bottom: 1px solid black
 }
 
 
