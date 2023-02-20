@@ -16,6 +16,10 @@
     border: 1px solid black;
 }
 
+.he {
+    height: 10rem;
+}
+
 
 /*** ALL ***/
 img {
@@ -35,8 +39,24 @@ ul a {
     font-size: 1.5rem;
 }
 
+.height-total {
+    height: 100%;
+}
+
+.tex-small {
+    font-size: .8rem;
+}
+
+.tex-smaller {
+    font-size: .6rem;
+}
+
 
 /*** COLORS ***/
 .bbg {
     border-bottom: 1px solid lightgray;
+}
+
+.bgg {
+    background-color: lightgray;
 }
