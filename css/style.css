@@ -23,7 +23,14 @@
 
 
 /*** MAIN ***/
-
+/* 1 */
+.chev-section-one {
+    height: 2.1rem;
+    width: 2.1rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    padding: .4rem;
+}
 
 /* 6 */
 .player {
@@ -212,4 +219,33 @@ ul a {
 
 .b-b {
     background-color: var(--black);
+}
+
+
+/*** HOVER ***/
+    /* TODO: arrow */
+
+    /* btn */
+footer .btn-hover:hover {
+    color: var(--red);
+    background-color: var(--white);
+    border-color: var(--red);
+}
+
+    /* TODO: btn2 */
+
+    /* TODO: categories */
+
+    /* link */
+footer a:hover {
+    color: var(--black);
+}
+    /* menu */
+.header-nav a:hover {
+    color: var(--red);
+}
+    /* socials */
+.social i:hover {
+    background-color: var(--black);
+    color: var(--white);
 }

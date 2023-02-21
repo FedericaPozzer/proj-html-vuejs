@@ -111,8 +111,8 @@
                                 </p>
                             </div>
                             <div class="card-img-overlay d-flex">
-                                <p class="card-text align-self-center">
-                                    <i class="fa-solid fa-bars"></i>
+                                <p class="card-text align-self-center icon-bigger">
+                                    <i v-bind:class="icons.chevronLeft" class=" chev-section-one"></i>
                                 </p>
                             </div>
                             <div class="card-body">
@@ -161,8 +161,8 @@
                                 </p>
                             </div>
                             <div class="card-img-overlay d-flex flex-row-reverse">
-                                <p class="card-text align-self-center">
-                                    <i class="fa-solid fa-bars"></i>
+                                <p class="card-text align-self-center icon-bigger">
+                                    <i v-bind:class="icons.chevronRight"  class=" chev-section-one"></i>
                                 </p>
                             </div>
                             <div class="card-body">
@@ -513,7 +513,7 @@
                                 <p class="card-text"><small class="text-muted">December 26, 2022</small></p>
                                 <p class="card-text tex-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odit, fugit deleniti cum fuga vero...</p>
                             </div>
-                            <a href="#"> <button class="btn btn-warning rounded-pill px-4 py-1">Read More</button> </a>
+                            <a href="#"> <button class="btn rounded-pill px-4 py-1 w-t r-b">Read More</button> </a>
                         </div>
                     </div>
 
@@ -533,7 +533,7 @@
                                 <p class="card-text tex-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odit, fugit
                                     deleniti cum fuga vero...</p>
                             </div>
-                            <a href="#"> <button class="btn btn-warning rounded-pill px-4 py-1">Read More</button> </a>
+                            <a href="#"> <button class="btn rounded-pill px-4 py-1 w-t r-b">Read More</button> </a>
                         </div>
                     </div>
 
@@ -553,7 +553,7 @@
                                 <p class="card-text tex-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odit, fugit
                                     deleniti cum fuga vero...</p>
                             </div>
-                            <a href="#"> <button class="btn btn-warning rounded-pill px-4 py-1">Read More</button> </a>
+                            <a href="#"> <button class="btn rounded-pill px-4 py-1 w-t r-b">Read More</button> </a>
                         </div>
                     </div>
                 </div>
@@ -752,7 +752,7 @@
                             <img src="./img/visit-france.webp" class="card-img relative" alt="fashion">
                             <div class="veil"></div>
                             <div class="card-img-overlay d-flex justify-content-center align-items-center">
-                                <h5 class="card-title">LIFESTYLE</h5>
+                                <h5 class="card-title sissy">LIFESTYLE</h5>
                             </div>
                         </div>
                     </div>
@@ -795,7 +795,7 @@
                     <!-- row -->
                     <div class="row w-t">
 
-                        <!-- col 1/5 (col 1-2-3-4/5) -->
+                        <!-- col col 1-2-3-4/5 -->
                         <div class="col-2" v-for="(list, i) of footerLinks">
                             <h5>{{list.title}}</h5>
                             <ul class="p-0" v-for="link of list.links">
@@ -810,7 +810,7 @@
                             <h5>SUBSCRIBE TO NEWSLETTER</h5>
                             <input type="email" id="email" placeholder="Email" v-model="newSubscribers"
                             @keyup.enter="addNewSubscriber()" required>
-                            <button class="btn mt-2 b-b w-t" v-on:click="addNewSubscriber()">SUBSCRIBE</button>
+                            <button class="btn mt-2 b-b w-t btn-hover" v-on:click="addNewSubscriber()">SUBSCRIBE</button>
                         </div>
                     </div>
                 </div>

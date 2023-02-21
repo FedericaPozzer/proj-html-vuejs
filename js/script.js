@@ -77,7 +77,7 @@ createApp({
 
         // raccolgo le email inserite
         addNewSubscriber() {
-            alert("added " + this.newSubscribers); //ok!
+            alert("added " + this.newSubscribers); //ok! :)
         }
 
     }
