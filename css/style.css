@@ -2,6 +2,55 @@
 
 
 /*** MAIN ***/
+/* 6 */
+.player {
+    height: 30rem;
+    color: white;
+}
+
+.player-main-img > img {
+    height: 30rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.player .card-img-overlay {
+    width: 67%;
+}
+
+.player .player-channel-logo > img {
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.player-yt-logo > img {
+    height: 1.5rem;
+    margin-left: .5rem;
+}
+
+.player-ul {
+    height: 30rem;
+    overflow: scroll;
+}
+
+.player-ul li {
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.player-ul img {
+    max-height: 4rem;
+    border-radius: .5rem;
+}
+
+.player-ul-number {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: .4rem;
+    background-color: palevioletred;
+    border-radius: 2px;
+}
 
 
 /*** FOOTER ***/
