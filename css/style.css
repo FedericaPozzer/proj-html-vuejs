@@ -1,4 +1,25 @@
 /*** HEADER ***/
+/* 1 */
+.header-nav-social,
+.header-nav-social img {
+    height: 2.3rem;
+}
+
+.header-nav-social .news {
+    line-height: 2.3rem;
+}
+
+.social i {
+    background-color: var(--white);
+    color: var(--red);
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: .9rem;
+    padding: .3rem;
+    margin-right: .5rem;
+    cursor: pointer;
+}
 
 
 /*** MAIN ***/
@@ -68,8 +89,8 @@
 
 
 /*** FOOTER ***/
-footer .btn {
-    background-color: palevioletred;
+footer a {
+    color: var(--white)
 }
 
 
@@ -125,6 +146,10 @@ ul a {
     border-bottom: 1px solid black
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 
 /*** COLORS ***/
 .bbg {
@@ -171,9 +196,9 @@ ul a {
 
 /* balck */
 .b-t {
-    color: var(--balck);
+    color: var(--black);
 }
 
 .b-b {
-    background-color: var(--balck);
+    background-color: var(--black);
 }

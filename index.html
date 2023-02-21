@@ -33,19 +33,23 @@
             <!-- <div class="container"> -->
                 <!-- Header 1/3 - nav-social -->
                 <!-- TODO: navbar bg-rosso, due div: logo a sinistra e ul link icone a destra (d-flex space between) -->
-                <div class="db header-nav-social">
+                <div class="db header-nav-social r-b w-t">
                     <div class="container d-flex justify-content-between align-items-center">
-                        <img src="./img/page-banner-1-300x28.webp" alt="news">
+                        <div class="d-flex align-items-center">
+                            <div class="news px-3 b-b">NEWS UPDATES</div>
+                            <img :src="images.news" alt="news">
+                            <div class="ms-2 g-t">05:35 THE_</div>
+                        </div>
                         <div class="d-flex">
-                            <div class="d-flex me-3">
-                                <div>&hearts;</div>
-                                <div>&hearts;</div>
+                            <div class="d-flex me-5 pointer">
+                                <div> <i v-bind:class="icons.chevronLeft"></i> </div>
+                                <div> <i v-bind:class="icons.chevronRight" class="ms-3"></i> </div>
                             </div>
-                            <div class="d-flex">
-                                <div>&hearts;</div>
-                                <div>&hearts;</div>
-                                <div>&hearts;</div>
-                                <div>&hearts;</div>
+                            <div class="social d-flex">
+                                <div> <i v-bind:class="icons.facebook"></i> </div>
+                                <div> <i v-bind:class="icons.twitter"></i> </div>
+                                <div> <i v-bind:class="icons.instagram"></i> </div>
+                                <div> <i v-bind:class="icons.youtube"></i> </div>
                             </div>
                         </div>
                     </div>
@@ -53,62 +57,37 @@
                 
                 <!-- Header 2/3 - logo-bar -->
                 <!-- TODO: due loghi, easy -->
-                <div class="db header-logo-bar bbg">
+                <div class="db header-logo-bar w-b">
                     <div class="container d-flex justify-content-between my-3">
                         <div>
-                            <img src="./img/anime-logo-300x89.webp" alt="logo">
+                            <img :src="images.logo" alt="logo">
                         </div>
                         <div>
-                            <img src="./img/header-banner.webp" alt="banner" class="rounded">
+                            <img :src="images.banner" alt="banner" class="rounded">
                         </div>
                     </div>
                 </div>
 
                 <!-- Header 3/3 - nav -->
                 <!-- TODO: navbar con buger menu, ul e icone, d-flex space between -->
-                <div class="db header-nav">
+                <div class="db header-nav w-b b-t">
                     <div class="container">
                         <div class="d-flex justify-content-between align-items-center">
-                            <div class="icon-bigger">
-                                <i class="fa-solid fa-bars"></i>
+                            <div class="icon-bigger pointer">
+                                <i v-bind:class="icons.burgerMenu"></i>
                             </div>
                             <div>
                                 <ul class="d-flex">
-                                    <li class="mx-3">
-                                        <a href="#">
-                                            &hearts; HOME
+                                    <li>
+                                        <a class="b-t mx-3" v-for="(item, i) of headerMenu" href="#">
+                                            <i v-bind:class="item.icon"></i>
+                                            {{ item.section }}
                                         </a>
                                     </li>
-                        
-                                    <li class="mx-3">
-                                        <a href="#">
-                                            &hearts; HOME &hearts;
-                                        </a>
-                                    </li>
-                        
-                                    <li class="mx-3">
-                                        <a href="#">
-                                            &hearts; HOME &hearts;
-                                        </a>
-                                    </li>
-                        
-                                    <li class="mx-3">
-                                        <a href="#">
-                                            &hearts; HOME &hearts;
-                                        </a>
-                                    </li>
-                        
-                                    <li class="mx-3">
-                                        <a href="#">
-                                            &hearts; HOME
-                                        </a>
-                                    </li>
-                        
-                        
                                 </ul>
                             </div>
-                            <div class="icon-bigger">
-                                &hearts;
+                            <div class="icon-bigger pointer">
+                                <i v-bind:class="icons.search"></i>
                             </div>
                         </div>
                     </div>
@@ -120,7 +99,7 @@
         <main> 
             <!-- Main - 1/7 -->
             <!-- TODO: bg-grigio, row con 4 cols contenenti cards -->
-            <section class="container-fluid py-4 bgg">
+            <section class="container-fluid py-4 g-b">
                 <div class="row">
                     <div class="col-3">
                         <div class="card">
@@ -198,7 +177,7 @@
 
             <!-- Main - 2/7 -->
             <!-- TODO: row con 3 cols, le due sui lati sono più piccole e contengono due div -->
-            <section class="container">
+            <section class="container w-b">
                 <!-- row -->
                 <div class="row my-5">
                     <!-- col 1/3 -->
@@ -350,7 +329,7 @@
 
             <!-- Main - 3/7 -->
             <!-- TODO: div d-flex con titolo e links space-between, row con due colonne, nella seoconda colonna un'altra row? -->
-            <section class="db container">
+            <section class="db container w-b">
                 <!-- Section header -->
                 <div class="d-flex justify-content-between align-items-center">
                     <h4 class="m-0">LIFESTYLE & STORIES</h4>
@@ -491,7 +470,7 @@
 
             <!-- Main - 4/7 -->
             <!-- TODO: bg-grigio, logo, sembrerebbe facile -->
-            <section class="bgg mt-5">
+            <section class="g-b mt-5">
                 <div class="container py-3">
                     <img src="./img/page-banner-1.webp" alt="advertisement" class="rounded width-total">
                 </div>
@@ -499,7 +478,7 @@
 
             <!-- Main - 5/7 -->
             <!-- TODO: come nella 3 div d-flex con titolo e icone, una row con tre cols contenenti cards -->
-            <section class="db container">
+            <section class="db container w-b">
                 <!-- Titolo / icone -->
                 <div class="db d-flex justify-content-between align-items-center mt-4 mb-2">
                     <h4 class="m-0">FEATURED POSTS</h4>
@@ -514,7 +493,7 @@
 
                     <!-- col 1/3 -->
                     <div class="col-4">
-                        <div class="bgg card text-center pb-3">
+                        <div class="card text-center pb-3 g-b">
                             <img src="./img/visit-france.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text">
@@ -533,7 +512,7 @@
 
                     <!-- col 2/3 -->
                     <div class="col-4">
-                        <div class="bgg card text-center pb-3">
+                        <div class="card text-center pb-3 g-b">
                             <img src="./img/visit-france.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text">
@@ -553,7 +532,7 @@
 
                     <!-- col 3/3 -->
                     <div class="col-4">
-                        <div class="bgg card text-center pb-3">
+                        <div class="card text-center pb-3 g-b">
                             <img src="./img/visit-france.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text">
@@ -575,7 +554,7 @@
 
             <!-- Main - 6/7 -->
             <!-- TODO: card/carosello -->
-            <section class="container mt-5">
+            <section class="container mt-5 w-b">
                 <div class="player card mb-3" style="max-width: 100%">
                     
                     <!-- row -->
@@ -719,7 +698,7 @@
 
             <!-- Main - 7/7 -->
             <!-- TODO: row con 6 cols --- PIU' UNA LINEA STRANA -->
-            <section class="container-fluid mt-5">
+            <section class="container-fluid mt-5 w-b">
                 <!-- row -->
                 <div class="row">
 
@@ -794,14 +773,14 @@
         </main>
 
         <!-- FOOTER -->
-        <footer>
-            <div class="container bbg">
+        <footer class="r-b">
+            <div class="container">
                 <!-- Footer 1/2 - nav -->
                 <!-- TODO: links links links + input -->
-                <div class="db footer-nav my-5">
+                <div class="db footer-nav my-5 py-5 bbg">
                     
                     <!-- row -->
-                    <div class="row">
+                    <div class="row w-t">
 
                         <!-- col 1/5 (col 1-2-3-4/5) -->
                         <div class="col-2">
@@ -877,16 +856,16 @@
                         <div class="col-4 d-flex flex-column">
                             <h5>SUBSCRIBE TO NEWSLETTER</h5>
                             <input type="email" id="email" placeholder="Email" required>
-                            <button class="btn mt-2"> SUBSCRIBE</button>
+                            <button class="btn mt-2 b-b w-t"> SUBSCRIBE</button>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Footer 2/2 - company-bar -->
                 <!-- TODO: logo e nome company d-flex space between -->
-                <div class="db footer-company-bar my-4">
+                <div class="db footer-company-bar my-4 pb-4">
                     <div class="d-flex justify-content-between align-items-center">
-                        <img src="./img/anime-whitelogo-300x89.png" alt="logo" class="bgg">
+                        <img src="./img/anime-whitelogo-300x89.png" alt="logo">
                         <p class="m-0">C Anime Teck, Theme by HasnainDEV</p>
                     </div>
                 </div>
