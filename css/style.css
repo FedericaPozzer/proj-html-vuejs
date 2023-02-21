@@ -54,7 +54,6 @@
 
 
 /* 7 */
-
 .section-seven-card {
     height: 12rem;
 }
@@ -66,6 +65,7 @@
 .section-seven-card h5 {
     background-color: rgba(0, 0, 0, .5);
 }
+
 
 /*** FOOTER ***/
 footer .btn {
@@ -80,6 +80,7 @@ footer .btn {
 .db {
     border: 1px solid black;
 }
+
 
 
 /*** ALL ***/
@@ -132,4 +133,47 @@ ul a {
 
 .bgg {
     background-color: lightgray;
+}
+
+/*** PROJECT PALETTE ***/
+:root {
+    --red: #bf1d2e;
+    --white: #ffffff;
+    --grey: #f3f3f3;
+    --black: #333333;
+}
+
+/* red */
+.r-t {
+    color: var(--red);
+}
+.r-b {
+    background-color: var(--red);
+}
+
+/* white */
+.w-t {
+    color: var(--white);
+}
+
+.w-b {
+    background-color: var(--white);
+}
+
+/* grey */
+.g-t {
+    color: var(--grey);
+}
+
+.g-b {
+    background-color: var(--grey);
+}
+
+/* balck */
+.b-t {
+    color: var(--balck);
+}
+
+.b-b {
+    background-color: var(--balck);
 }
