@@ -53,6 +53,20 @@
 }
 
 
+/* 7 */
+
+.section-seven-card {
+    height: 12rem;
+}
+
+.section-seven-card img {
+    object-fit: cover;
+}
+
+.section-seven-card h5 {
+    background-color: rgba(0, 0, 0, .5);
+}
+
 /*** FOOTER ***/
 
 
