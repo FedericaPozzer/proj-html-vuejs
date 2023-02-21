@@ -106,10 +106,6 @@
 
 
 /*** FOOTER ***/
-.top-weird {
-    border-top: 5px solid black;
-}
-
 footer a {
     color: var(--white)
 }
@@ -269,3 +265,62 @@ footer a:hover {
 
 
 
+
+/*** QUELLA COSA (from web) ***/
+/* .container {
+    margin: 15px 30px;
+    width: 200px;
+    border: 1px solid black;
+    position: relative;
+    min-height: 200px;
+}
+
+
+.container:after,
+.container:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.container:after {
+    top: 10px;
+    border-color: transparent transparent transparent #fdd;
+    border-width: 10px;
+}
+
+.container:before {
+    top: 9px;
+    border-color: transparent transparent transparent #a00;
+    border-width: 11px;
+} */
+
+/*** QUELLA COSA (K version) seeeeeeeee *.* ***/
+.top-weird {
+    width: 100%;
+    border: 2px solid black;
+    position: relative;
+}
+
+.top-weird:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    
+    transform: rotate(90deg);
+    /* background-color: teal; */
+}
+
+.top-weird:after {
+    
+    border-color: transparent transparent transparent black;
+    border-width: 15px;
+}
