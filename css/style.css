@@ -51,6 +51,10 @@ ul a {
     height: 100%;
 }
 
+.width-total {
+    width: 100%;
+}
+
 .tex-small {
     font-size: .8rem;
 }
