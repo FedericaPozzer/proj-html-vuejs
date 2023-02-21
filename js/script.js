@@ -28,27 +28,26 @@ createApp({
                 {   
                     icon : "fa-solid fa-house-chimney", //OK
                     section : "HOME", //OK
-                    // chevron : false,
                 },
                 {
                     icon : "fa-solid fa-suitcase", //OK
                     section : "LIFESTYLE", //OK
-                    // chevron : false,
+                    chevron : "fa-solid fa-chevron-down"
                 },
                 {
                     icon : "fa-solid fa-book-open-reader", //OK
                     section : "STORIES", //OK
-                    // chevron : false,
+                    chevron: "fa-solid fa-chevron-down"
+
                 },
                 {
                     icon : "fa-solid fa-book", //OK
                     section : "PAGES", //OK
-                    // chevron : false,
+                    chevron: "fa-solid fa-chevron-down"
                 },
                 {
                     icon : "fa-solid fa-user-large", //OK
                     section : "ABOUT US", //OK
-                    // chevron : false,
                 },
             ],
 
@@ -83,25 +82,3 @@ createApp({
 
     }
 }).mount("#my-app");
-
-// sendMsg() {
-//     // console.log(this.new_msg); // proxy
-
-//     // trasfromazione in un non-proxy
-//     const copy_notProxy = {
-//         ...this.new_msg,
-//     }
-
-//     // magia nera
-//     let ciao = this.contacts[this.selected_index];
-//     ciao.messages.push(copy_notProxy);
-
-
-//     // svuoto la input bar quando invio
-//     this.new_msg.text = "";
-
-// },
-
-
-// @keyup.enter="sendMsg()"
-// v - model="new_msg.text"
