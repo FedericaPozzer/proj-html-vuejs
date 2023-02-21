@@ -23,6 +23,8 @@
 
 
 /*** MAIN ***/
+
+
 /* 6 */
 .player {
     height: 30rem;
@@ -81,10 +83,6 @@
 
 .section-seven-card img {
     object-fit: cover;
-}
-
-.section-seven-card h5 {
-    background-color: rgba(0, 0, 0, .5);
 }
 
 
@@ -148,6 +146,19 @@ ul a {
 
 .pointer {
     cursor: pointer;
+}
+
+/* il velo scuro sulle img */
+.veil {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .4);
+}
+/* le scritte sulle img SOPRA al velo scuro */
+.card-img-overlay {
+    z-index: 2;
 }
 
 
