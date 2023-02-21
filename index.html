@@ -33,7 +33,7 @@
             <!-- <div class="container"> -->
                 <!-- Header 1/3 - nav-social -->
                 <!-- TODO: navbar bg-rosso, due div: logo a sinistra e ul link icone a destra (d-flex space between) -->
-                <div class="db header-nav-social r-b w-t">
+                <div class="header-nav-social r-b w-t">
                     <div class="container d-flex justify-content-between align-items-center">
                         <div class="d-flex align-items-center">
                             <div class="news px-3 b-b">NEWS UPDATES</div>
@@ -57,7 +57,7 @@
                 
                 <!-- Header 2/3 - logo-bar -->
                 <!-- TODO: due loghi, easy -->
-                <div class="db header-logo-bar w-b">
+                <div class="header-logo-bar w-b">
                     <div class="container d-flex justify-content-between my-3">
                         <div>
                             <img :src="images.logo" alt="logo">
@@ -70,7 +70,7 @@
 
                 <!-- Header 3/3 - nav -->
                 <!-- TODO: navbar con buger menu, ul e icone, d-flex space between -->
-                <div class="db header-nav w-b b-t">
+                <div class="header-nav w-b b-t">
                     <div class="container">
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="icon-bigger pointer">
@@ -102,6 +102,8 @@
             <!-- TODO: bg-grigio, row con 4 cols contenenti cards -->
             <section class="container-fluid py-4 g-b">
                 <div class="row">
+
+                    <!-- col 1/4 -->
                     <div class="col-3">
                         <div class="card">
                             <img src="./img/healthy-foods.webp" class="card-img-top" alt="healthy">
@@ -122,42 +124,46 @@
                         </div>
                     </div>
 
+                    <!-- col 2/4 -->
                     <div class="col-3">
                         <div class="card">
-                            <img src="./img/healthy-foods.webp" class="card-img-top" alt="healthy">
+                            <img src="./img/winter.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text text-center">
-                                    <span class="badge text-bg-light">Food</span>
+                                    <span class="badge text-bg-light">Fashion</span>
                                 </p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text text-center mb-0">The Best Healthy Foods in 2022</p>
+                                <p class="card-text text-center mb-0">The Best Winter Outfits</p>
                                 <p class="card-text text-center"><small class="text-muted">December 26, 2022</small></p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- col 3/4 -->
                     <div class="col-3">
                         <div class="card">
-                            <img src="./img/healthy-foods.webp" class="card-img-top" alt="healthy">
+                            <img src="./img/photographers-mistakes.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text text-center">
-                                    <span class="badge text-bg-light">Food</span>
+                                    <span class="badge text-bg-light">Fashion</span>
                                 </p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text text-center mb-0">The Best Healthy Foods in 2022</p>
+                                <p class="card-text text-center mb-0">Beginner Photographer's Mistakes</p>
                                 <p class="card-text text-center"><small class="text-muted">December 26, 2022</small></p>
                             </div>
                         </div>
                     </div>
 
+                    <!-- col 4/4 -->
                     <div class="col-3">
                         <div class="card">
-                            <img src="./img/healthy-foods.webp" class="card-img-top" alt="healthy">
+                            <img src="./img/ideas-anime.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text text-center">
-                                    <span class="badge text-bg-light">Food</span>
+                                    <span class="badge text-bg-light">Culture</span>
+                                    <span class="badge text-bg-light ms-2">Stories</span>
                                 </p>
                             </div>
                             <div class="card-img-overlay d-flex flex-row-reverse">
@@ -166,7 +172,7 @@
                                 </p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text text-center mb-0">The Best Healthy Foods in 2022</p>
+                                <p class="card-text text-center mb-0">Live Ideas You Might Be Anime</p>
                                 <p class="card-text text-center"><small class="text-muted">December 26, 2022</small></p>
                             </div>
                         </div>
@@ -182,9 +188,10 @@
                 <!-- row -->
                 <div class="row my-5">
                     <!-- col 1/3 -->
-                    <div class="db col-3">
+                    <div class="col-3">
                         <div>
-                            <div class="db">
+                            <!-- Mini card 1/2 -->
+                            <div>
                                 <div class="card text-bg-dark">
                                     <img src="./img/anime-fashion.webp" class="card-img relative" alt="best">
                                     <div class="veil"></div>
@@ -212,14 +219,15 @@
                                 </div>
                             </div>
 
-                            <div class="db mt-3">
+                            <!-- Mini card 2/2 -->
+                            <div class="mt-3">
                                 <div class="card text-bg-dark">
                                     <img src="./img/travel-alone-300x200.webp" class="card-img relative" alt="best">
                                     <div class="veil"></div>
                                     <div class="card-img-overlay d-flex flex-column justify-content-between">
                                         <div class="d-flex justify-content-center">
-                                            <span class="badge text-bg-light mx-1">Food</span>
-                                            <span class="badge text-bg-light mx-1">Food</span>
+                                            <span class="badge text-bg-light mx-1">Stories</span>
+                                            <span class="badge text-bg-light mx-1">Travel</span>
                                         </div>
                                 
                                         <div class="mt-auto">
@@ -228,7 +236,7 @@
                                                     <div>&hearts; demo</div>
                                                 </small>
                                                 <small>
-                                                    <div class="ms-1">&hearts; December 25, 2022</div>
+                                                    <div class="ms-1">&hearts; December 26, 2022</div>
                                                 </small>
                                             </div>
                                 
@@ -244,15 +252,15 @@
                     </div>
 
                     <!-- col 2/3 -->
-                    <div class="db col-6">
+                    <div class="col-6">
                         <div class="card text-bg-dark">
                             <img src="./img/best-places.webp" class="card-img relative" alt="best">
                             <div class="veil"></div>
                             <div class="card-img-overlay d-flex flex-column justify-content-between">
                                 <div class="d-flex justify-content-center">
-                                    <span class="badge text-bg-light mx-1">Food</span>
-                                    <span class="badge text-bg-light mx-1">Food</span>
-                                    <span class="badge text-bg-light mx-1">Food</span>
+                                    <span class="badge text-bg-light mx-1">Lifestyle</span>
+                                    <span class="badge text-bg-light mx-1">Stories</span>
+                                    <span class="badge text-bg-light mx-1">Travel</span>
                                 </div>
 
                                 <div>
@@ -270,11 +278,12 @@
                     </div>
 
                     <!-- col 3/3 -->
-                    <div class="db col-3">
+                    <div class="col-3">
                         <div>
-                            <div class="db">
+                            <!-- Mini card 1/2 -->
+                            <div>
                                 <div class="card text-bg-dark">
-                                    <img src="./img/anime-fashion.webp" class="card-img relative" alt="best">
+                                    <img src="./img/music-love.webp" class="card-img relative" alt="best">
                                     <div class="veil"></div>
                                     <div class="card-img-overlay d-flex flex-column justify-content-between">
                                         <div class="d-flex justify-content-center">
@@ -299,8 +308,9 @@
                                     </div>
                                 </div>
                             </div>
-                    
-                            <div class="db mt-3">
+
+                            <!-- Mini card 2/2 -->
+                            <div class="mt-3">
                                 <div class="card text-bg-dark">
                                     <img src="./img/visit-france.webp" class="card-img relative" alt="best">
                                     <div class="veil"></div>
@@ -316,7 +326,7 @@
                                                     <div>&hearts; demo</div>
                                                 </small>
                                                 <small>
-                                                    <div class="ms-1">&hearts; December 25, 2022</div>
+                                                    <div class="ms-1">&hearts; December 26, 2022</div>
                                                 </small>
                                             </div>
                     
@@ -335,21 +345,22 @@
 
             <!-- Main - 3/7 -->
             <!-- TODO: div d-flex con titolo e links space-between, row con due colonne, nella seoconda colonna un'altra row? -->
-            <section class="db container w-b">
+            <section class="container w-b">
                 <!-- Section header -->
                 <div class="d-flex justify-content-between align-items-center">
                     <h4 class="m-0">LIFESTYLE & STORIES</h4>
                     <div>
-                        <button class="btn btn-secondary py-1">ALL</button>
-                        <button class="btn btn-secondary py-1 ms-3">LIFESTYLE</button>
-                        <button class="btn btn-secondary py-1 ms-3">STORIES</button>
+                        <button class="btn b-b w-t py-1">ALL</button>
+                        <button class="btn b-b w-t py-1 ms-3">LIFESTYLE</button>
+                        <button class="btn b-b w-t py-1 ms-3">STORIES</button>
                     </div>
                 </div>
+
                 <!-- row -->
-                <div class="db row my-2">
+                <div class="row my-2">
 
                     <!-- col 1/2 -->
-                    <div class="db col-7">
+                    <div class="col-7">
                         <div class="card text-bg-dark">
                             <img src="./img/success-story.webp" class="card-img relative" alt="success">
                             <div class="veil"></div>
@@ -376,8 +387,9 @@
                     </div>
 
                     <!-- col 2/2 -->
-                    <div class="db col-5 d-flex flex-column justify-content-between">
+                    <div class="col-5 d-flex flex-column justify-content-between">
 
+                        <!-- Mini card 1/3 -->
                         <div class="d-flex">
                             <div class="card text-bg-dark">
                                 <div class="img-container">
@@ -389,14 +401,14 @@
                                     </div>
                                 </div>
                             </div>
-                            
+                        
                             <div class="align-self-center ms-1">
                                 <div class="card-text d-flex">
                                     <small>
                                         <div>&hearts; demo</div>
                                     </small>
                                     <small>
-                                        <div class="ms-1">&hearts; December 25, 2022</div>
+                                        <div class="ms-1">&hearts; December 26, 2022</div>
                                     </small>
                                 </div>
                             
@@ -409,14 +421,15 @@
                             </div>
                         </div>
 
+                        <!-- Mini card 2/3 -->
                         <div class="d-flex">
                             <div class="card text-bg-dark">
                                 <div class="img-container">
-                                    <img src="./img/travel-alone-300x200.webp" class="card-img" alt="success">
+                                    <img src="./img/best-places-300x200.webp" class="card-img" alt="success">
                                 </div>
                                 <div class="card-img-overlay d-flex flex-column justify-content-between">
                                     <div>
-                                        <span class="badge text-bg-light mx-1">Stories</span>
+                                        <span class="badge text-bg-light mx-1">Lifestyle</span>
                                     </div>
                                 </div>
                             </div>
@@ -433,21 +446,22 @@
                         
                                 <div class="">
                                     <p class="card-text fw-semibold">
-                                        <small>Traveling Alone Is Awesome</small>
+                                        <small>Places For A Road Trip</small>
                                     </p>
                         
                                 </div>
                             </div>
                         </div>
 
+                        <!-- Mini card 3/3 -->
                         <div class="d-flex">
                             <div class="card text-bg-dark">
                                 <div class="img-container">
-                                    <img src="./img/travel-alone-300x200.webp" class="card-img" alt="success">
+                                    <img src="./img/music-love.webp" class="card-img" alt="success">
                                 </div>
                                 <div class="card-img-overlay d-flex flex-column justify-content-between">
                                     <div>
-                                        <span class="badge text-bg-light mx-1">Stories</span>
+                                        <span class="badge text-bg-light mx-1">Culture</span>
                                     </div>
                                 </div>
                             </div>
@@ -464,7 +478,7 @@
                         
                                 <div class="">
                                     <p class="card-text fw-semibold">
-                                        <small>Traveling Alone Is Awesome</small>
+                                        <small class="r-t">Music The Love Of MY Life</small>
                                     </p>
                         
                                 </div>
@@ -485,13 +499,17 @@
 
             <!-- Main - 5/7 -->
             <!-- TODO: come nella 3 div d-flex con titolo e icone, una row con tre cols contenenti cards -->
-            <section class="db container w-b">
+            <section class="container w-b">
                 <!-- Titolo / icone -->
-                <div class="db d-flex justify-content-between align-items-center mt-4 mb-2">
+                <div class="d-flex justify-content-between align-items-center mt-4 mb-2">
                     <h4 class="m-0">FEATURED POSTS</h4>
-                    <div class="d-flex icon-bigger">
-                        <div class="me-3">&hearts;</div>
-                        <div>&hearts;</div>
+                    <div class="d-flex">
+                        <div class="me-3">
+                            <i v-bind:class="icons.chevronLeft" class="chevys b-b w-t"></i>
+                        </div>
+                        <div class="me-3">
+                            <i v-bind:class="icons.chevronRight" class="chevys b-b w-t"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -501,7 +519,7 @@
                     <!-- col 1/3 -->
                     <div class="col-4">
                         <div class="card text-center pb-3 g-b">
-                            <img src="./img/visit-france.webp" class="card-img-top" alt="healthy">
+                            <img src="./img/ideas-anime.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text">
                                     <span class="badge text-bg-light mx-1">Culture</span>
@@ -523,12 +541,12 @@
                             <img src="./img/visit-france.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text">
-                                    <span class="badge text-bg-light mx-1">Culture</span>
-                                    <span class="badge text-bg-light mx-1">Stories</span>
+                                    <span class="badge text-bg-light mx-1">Lifestyle</span>
+                                    <span class="badge text-bg-light mx-1">Travel</span>
                                 </p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text mb-0">Live Ideas You Might Be Anime</p>
+                                <p class="card-text mb-0">Reasons To Visit France</p>
                                 <p class="card-text"><small class="text-muted">December 26, 2022</small></p>
                                 <p class="card-text tex-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odit, fugit
                                     deleniti cum fuga vero...</p>
@@ -540,15 +558,15 @@
                     <!-- col 3/3 -->
                     <div class="col-4">
                         <div class="card text-center pb-3 g-b">
-                            <img src="./img/visit-france.webp" class="card-img-top" alt="healthy">
+                            <img src="./img/travel-alone.webp" class="card-img-top" alt="healthy">
                             <div class="card-img-overlay">
                                 <p class="card-text">
-                                    <span class="badge text-bg-light mx-1">Culture</span>
                                     <span class="badge text-bg-light mx-1">Stories</span>
+                                    <span class="badge text-bg-light mx-1">Travel</span>
                                 </p>
                             </div>
                             <div class="card-body">
-                                <p class="card-text mb-0">Live Ideas You Might Be Anime</p>
+                                <p class="card-text mb-0">Travelling Alone is Awesome</p>
                                 <p class="card-text"><small class="text-muted">December 26, 2022</small></p>
                                 <p class="card-text tex-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia odit, fugit
                                     deleniti cum fuga vero...</p>
@@ -579,11 +597,11 @@
                             
                                 <div class="d-flex">
                                     <div class="text-center me-3">
-                                        <div class="icon-bigger">&hearts;</div>
+                                        <div class="icon-bigger"><i class="fa-solid fa-clock"></i></div>
                                         <p class="tex-small">Guarda più...</p>
                                     </div>
                                     <div class="text-center">
-                                        <div class="icon-bigger">&hearts;</div>
+                                        <div class="icon-bigger"><i class="fa-solid fa-share"></i></div>
                                         <p class="tex-small">Condividi</p>
                                     </div>
                                 </div>
@@ -595,16 +613,16 @@
                         </div>
                         
                         <!-- col 2/2 - player list -->
-                        <div class="bgg player-ul col-4">
-                            <div class="card-body">
+                        <div class="player-ul col-4">
+                            <div class="card-body p-0">
                                 
                                 <!-- ul -->
                                 <ul class="p-0">
 
                                     <!-- li title -->
-                                    <li class="db">
+                                    <li class="db b-b ps-3">
                                         <div class="d-flex align-items-center">
-                                            <div class="me-4">&hearts;</div>
+                                            <div class="me-4"><i class="fa-solid fa-play icon-bigger"></i></div>
                                             <div>
                                                 <div>Video Playlist</div>
                                                 <div class="tex-smaller">1/7 Videos</div>
@@ -613,11 +631,11 @@
                                     </li>
 
                                     <!-- li video 1/7 -->
-                                    <li class="db">
+                                    <li class="db ps-3 g-b">
                                         <div class="d-flex align-items-center">
-                                            <div class="player-ul-number me-2">1</div>
+                                            <div class="player-ul-number me-2 r-b">1</div>
                                             <img src="./img/default.webp" alt="sdd">
-                                            <div class="tex-small ms-2">
+                                            <div class="tex-small ms-2 r-t">
                                                 <div>Overload Season 4 - official</div>
                                                 <div>Trailer 3 | AniTV</div>
                                             </div>
@@ -625,59 +643,59 @@
                                     </li>
 
                                     <!-- li video 2/7 -->
-                                    <li class="db">
+                                    <li class="db ps-3 g-b">
                                         <div class="d-flex align-items-center">
                                             <div class="player-ul-number me-2">2</div>
-                                            <img src="./img/default.webp" alt="sdd">
-                                            <div class="tex-small ms-2">
-                                                <div>Overload Season 4 - official</div>
-                                                <div>Trailer 3 | AniTV</div>
+                                            <img src="./img/hqdefault (1).jpg" alt="sdd">
+                                            <div class="tex-small ms-2 b-t">
+                                                <div>Rent A Girlfriend Season 2 -</div>
+                                                <div>Official Trailer | AniTV</div>
                                             </div>
                                         </div>
                                     </li>
 
                                     <!-- li video 3/7 -->
-                                    <li class="db">
+                                    <li class="db ps-3 g-b">
                                         <div class="d-flex align-items-center">
                                             <div class="player-ul-number me-2">3</div>
-                                            <img src="./img/default.webp" alt="sdd">
-                                            <div class="tex-small ms-2">
-                                                <div>Overload Season 4 - official</div>
-                                                <div>Trailer 3 | AniTV</div>
+                                            <img src="./img/hqdefault (1).jpg" alt="sdd">
+                                            <div class="tex-small ms-2 b-t">
+                                                <div>Uncle From Another World</div>
+                                                <div>Official Trailer 2 | AniTV</div>
                                             </div>
                                         </div>
                                     </li>
 
                                     <!-- li video 4/7 -->
-                                    <li class="db">
+                                    <li class="db ps-3 g-b">
                                         <div class="d-flex align-items-center">
                                             <div class="player-ul-number me-2">4</div>
-                                            <img src="./img/default.webp" alt="sdd">
-                                            <div class="tex-small ms-2">
-                                                <div>Overload Season 4 - official</div>
-                                                <div>Trailer 3 | AniTV</div>
+                                            <img src="./img/hqdefault (1).jpg" alt="sdd">
+                                            <div class="tex-small ms-2 b-t">
+                                                <div>Prima Doll - Official Trailer</div>
+                                                <div>AniTV</div>
                                             </div>
                                         </div>
                                     </li>
 
                                     <!-- li video 5/7 -->
-                                    <li class="db">
+                                    <li class="db ps-3 g-b">
                                         <div class="d-flex align-items-center">
                                             <div class="player-ul-number me-2">5</div>
-                                            <img src="./img/default.webp" alt="sdd">
-                                            <div class="tex-small ms-2">
-                                                <div>Overload Season 4 - official</div>
-                                                <div>Trailer 3 | AniTV</div>
+                                            <img src="./img/hqdefault (1).jpg" alt="sdd">
+                                            <div class="tex-small ms-2 b-t">
+                                                <div>Shoot! Gol To The Future</div>
+                                                <div>Official Trailer | AniTV</div>
                                             </div>
                                         </div>
                                     </li>
 
                                     <!-- li video 6/7 -->
-                                    <li class="db">
+                                    <li class="db ps-3 g-b">
                                         <div class="d-flex align-items-center">
                                             <div class="player-ul-number me-2">6</div>
-                                            <img src="./img/default.webp" alt="sdd">
-                                            <div class="tex-small ms-2">
+                                            <img src="./img/hqdefault (1).jpg" alt="sdd">
+                                            <div class="tex-small ms-2 b-t">
                                                 <div>Overload Season 4 - official</div>
                                                 <div>Trailer 3 | AniTV</div>
                                             </div>
@@ -685,11 +703,11 @@
                                     </li>
 
                                     <!-- li video 7/7 -->
-                                    <li class="db">
+                                    <li class="db ps-3 g-b">
                                         <div class="d-flex align-items-center">
                                             <div class="player-ul-number me-2">7</div>
-                                            <img src="./img/default.webp" alt="sdd">
-                                            <div class="tex-small ms-2">
+                                            <img src="./img/hqdefault (1).jpg" alt="sdd">
+                                            <div class="tex-small ms-2 b-t">
                                                 <div>Overload Season 4 - official</div>
                                                 <div>Trailer 3 | AniTV</div>
                                             </div>
@@ -700,12 +718,13 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
             <!-- Main - 7/7 -->
             <!-- TODO: row con 6 cols --- PIU' UNA LINEA STRANA -->
-            <section class="container-fluid mt-5 w-b">
+            <section class="container-fluid my-5 w-b">
                 <!-- row -->
                 <div class="row">
 
@@ -786,11 +805,11 @@
         </main>
 
         <!-- FOOTER -->
-        <footer class="r-b">
+        <footer class="top-weird r-b">
             <div class="container">
                 <!-- Footer 1/2 - nav -->
                 <!-- TODO: links links links + input -->
-                <div class="db footer-nav my-5 py-5 bbg">
+                <div class="footer-nav my-5 py-5 bbg">
                     
                     <!-- row -->
                     <div class="row w-t">
@@ -817,10 +836,10 @@
                 
                 <!-- Footer 2/2 - company-bar -->
                 <!-- TODO: logo e nome company d-flex space between -->
-                <div class="db footer-company-bar my-4 pb-4">
+                <div class="footer-company-bar my-4 pb-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <img :src="images.logoFooter" alt="logo">
-                        <p class="m-0">C Anime Teck, Theme by HasnainDEV</p>
+                        <p class="m-0 g-t">C Anime Teck, Theme by HasnainDEV</p>
                     </div>
                 </div>
 
