@@ -68,7 +68,9 @@
 }
 
 /*** FOOTER ***/
-
+footer .btn {
+    background-color: palevioletred;
+}
 
 
 
@@ -77,14 +79,6 @@
 
 .db {
     border: 1px solid black;
-}
-
-.he {
-    height: 10rem;
-}
-
-footer {
-    height: 70rem;
 }
 
 
