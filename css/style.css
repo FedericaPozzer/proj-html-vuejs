@@ -1,4 +1,5 @@
-/*** HEADER ***/
+/*************** HEADER ***************/
+
 .header-nav-social,
 .header-nav-social img {
     height: 2.3rem;
@@ -15,7 +16,8 @@
     height: 1.5rem;
     width: 1.5rem;
     font-size: .9rem;
-    padding: .3rem;
+    text-align: center;
+    padding: .25rem;
     margin-right: .5rem;
     cursor: pointer;
 }
@@ -25,23 +27,29 @@
 }
 
 
-/*** MAIN ***/
-/* 1 */
+/*************** MAIN ***************/
+
+/* Section 1 */
 .chev-section-one {
     height: 2.1rem;
     width: 2.1rem;
     background-color: var(--white);
     border-radius: 50%;
-    padding: .4rem;
+    padding-top: .3rem;
+    text-align: center;
 }
 
-/* 3 */
+/* Section 3 */
 .middle-card {
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
 }
 
-/* 5 */
+.img-container {
+    height: 9.5rem;
+}
+
+/* Section 5 */
 .chevys {
     width: 1.6rem;
     padding: .25rem 0 0 .5rem;
@@ -49,7 +57,7 @@
     border-radius: 50%;
 }
 
-/* 6 */
+/* Section 6 */
 .player {
     height: 30rem;
     color: var(--white);
@@ -89,6 +97,7 @@
 .player-ul img {
     max-height: 4rem;
     border-radius: .5rem;
+    cursor: pointer;
 }
 
 .player-ul-number {
@@ -107,7 +116,7 @@
     left: 48%;
 }
 
-/* 7 */
+/* Section 7 */
 .section-seven-card {
     height: 12rem;
 }
@@ -117,7 +126,7 @@
 }
 
 
-/*** FOOTER ***/
+/*************** FOOTER ***************/
 footer a {
     color: var(--grey)
 }
@@ -127,27 +136,18 @@ footer a {
 }
 
 
-
-
-/*** DEBUG ***/
-
-.db {
-    border: 1px solid black;
-}
-
+/* - *************************************************************************** - */
+/* - *************************************************************************** - */
 
 
 /*************** ALL ***************/
-img {
-    height: 100%;
-}
-
-.img-container {
-    height: 9.5rem;
-}
 
 body {
     background-color: var(--white)
+}
+
+img {
+    height: 100%;
 }
 
 ul {
@@ -157,6 +157,11 @@ ul {
 
 ul a {
     text-decoration: none;
+}
+
+.card, 
+.nob {
+    border: none;
 }
 
 .icon-bigger {
@@ -197,9 +202,6 @@ ul a {
     color: var(--red) !important; 
 }
 
-.card {
-    border: none;
-}
 
 /* il velo scuro sulle img */
 .veil {
@@ -216,8 +218,8 @@ ul a {
 }
 
 
-
 /*************** PROJECT PALETTE ***************/
+
 :root {
     --red: #bf1d2e;
     --white: #ffffff;
@@ -251,7 +253,7 @@ ul a {
     background-color: var(--grey);
 }
 
-/* balck */
+/* black */
 .b-t {
     color: var(--black);
 }
@@ -261,20 +263,21 @@ ul a {
 }
 
 
-/*************** HOVER ***************/
-    /* Hover - arrow */
+/*************** HOVER EFFECTS ***************/
+
+    /* Hover 1/7 - arrow */
 .chevys:hover {
     background-color: var(--red);
 }
 
-    /* Hover - btn */
+    /* Hover 2/7 - btn */
 footer .btn-hover:hover {
     color: var(--red);
     background-color: var(--white);
     border-color: var(--red);
 }
 
-    /* Hover - btn2 */
+    /* Hover 3/7 - btn2 */
 .featured .card-img-overlay {
     height: 50%;
 }
@@ -283,7 +286,7 @@ footer .btn-hover:hover {
     color: var(--grey);
 }
 
-    /* Hover - categories */
+    /* Hover 4/7 - categories */
 .posts {
     position: absolute;
     z-index: 2;
@@ -308,25 +311,23 @@ footer .btn-hover:hover {
     background-color: rgba(191, 29, 46, .8);
 }
 
-    /* Hover - link */
+    /* Hover 5/7 - link */
 footer a:hover {
     color: var(--black);
 }
-    /* Hover - menu */
+    /* Hover 6/7 - menu */
 .header-nav a:hover {
     color: var(--red);
 }
-    /* Hover - socials */
+    /* Hover 7/7 - socials */
 .social i:hover {
     background-color: var(--black);
     color: var(--white);
 }
 
 
+/*** QUELLA COSA (K version) ***/
 
-
-
-/*** QUELLA COSA (K version) seeeeeeeee *.* ***/
 .top-weird {
     width: 100%;
     border: 2px solid var(--black);
@@ -341,50 +342,20 @@ footer a:hover {
     width: 0;
     height: 0;
     border-style: solid;
-    
+
     transform: rotate(90deg);
     /* background-color: teal; */
 }
 
 .top-weird:after {
-    
+
     border-color: transparent transparent transparent var(--black);
     border-width: 18px;
 }
 
 
-/*** QUELLA COSA (from web) ***/
-/* .container {
-    margin: 15px 30px;
-    width: 200px;
+/*** DEBUG ***/
+
+/* .db {
     border: 1px solid black;
-    position: relative;
-    min-height: 200px;
-}
-
-.container:after,
-.container:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 100%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-.container:after {
-    top: 10px;
-    border-color: transparent transparent transparent #fdd;
-    border-width: 10px;
-}
-
-.container:before {
-    top: 9px;
-    border-color: transparent transparent transparent #a00;
-    border-width: 11px;
 } */
-
-
-
-

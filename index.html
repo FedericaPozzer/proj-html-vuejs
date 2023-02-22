@@ -7,8 +7,7 @@
     <title>Progetto HTML/VueJS</title>
 
     <!-- Favicon -->
-        <!-- <link rel="icon" type="image/x-icon" href="https://w1.pngwing.com/pngs/136/126/png-transparent-javascript-logo-angularjs-nodejs-computer-programming-web-development-computer-software-jquery-yellow-thumbnail.png"> -->
-
+        <link rel="icon" type="image/x-icon" href="./img/anime-favicon.png">
 
     <!-- Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -19,13 +18,11 @@
     <!-- MY CSS -->
         <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Axios -->
-        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" defer></script> -->
     <!-- Vue JS -->
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <!-- MY JS -->
-        <!-- <script type="text/javascript" src="./js/script.js" defer></script> -->
+    
 </head>
+
 <body>
     <div id="my-app">
         <!-- HEADER -->
@@ -98,6 +95,7 @@
 
         <!-- MAIN -->
         <main> 
+
             <!-- Main - 1/7 -->
             <!-- TODO: bg-grigio, row con 4 cols contenenti cards -->
             <section class="container-fluid py-4 g-b">
@@ -114,7 +112,7 @@
                             </div>
                             <div class="card-img-overlay d-flex">
                                 <p class="card-text align-self-center icon-bigger">
-                                    <i v-bind:class="icons.chevronLeft" class=" chev-section-one"></i>
+                                    <i v-bind:class="icons.chevronLeft" class=" chev-section-one pointer"></i>
                                 </p>
                             </div>
                             <div class="card-body">
@@ -168,7 +166,7 @@
                             </div>
                             <div class="card-img-overlay d-flex flex-row-reverse">
                                 <p class="card-text align-self-center icon-bigger">
-                                    <i v-bind:class="icons.chevronRight"  class=" chev-section-one"></i>
+                                    <i v-bind:class="icons.chevronRight"  class=" chev-section-one pointer"></i>
                                 </p>
                             </div>
                             <div class="card-body">
@@ -403,7 +401,7 @@
                                 </div>
                             </div>
                         
-                            <div class="align-self-center ms-1">
+                            <div class="align-self-center ms-1 ps-1">
                                 <div class="card-text d-flex">
                                     <small>
                                         <div><i class="fa-solid fa-user-large"></i> demo</div>
@@ -436,7 +434,7 @@
                                 </div>
                             </div>
                         
-                            <div class="align-self-center ms-1">
+                            <div class="align-self-center ms-1 ps-2">
                                 <div class="card-text d-flex">
                                     <small>
                                         <div><i class="fa-solid fa-user-large"></i> demo</div>
@@ -469,7 +467,7 @@
                                 </div>
                             </div>
                         
-                            <div class="align-self-center ms-1">
+                            <div class="align-self-center ms-1 ps-2">
                                 <div class="card-text d-flex">
                                     <small>
                                         <div><i class="fa-solid fa-user-large"></i> demo</div>
@@ -581,7 +579,7 @@
             </section>
 
             <!-- Main - 6/7 -->
-            <!-- TODO: card/carosello -->
+            <!-- TODO: youtube style -->
             <section class="container mt-5 w-b">
                 <div class="player card mb-3" style="max-width: 100%">
                     
@@ -589,7 +587,7 @@
                     <div class="row g-0">
 
                         <!-- col 1/2 - palyer main img -->
-                        <div class="col-8 player-main-img">
+                        <div class="col-8 player-main-img pointer">
                             <img src="./img/sddefault.webp" class="img-fluid rounded-start width-total relative" alt="default">
 
                             <div class="card-img-overlay d-flex justify-content-between pt-0">
@@ -629,7 +627,7 @@
                                     <!-- li title -->
                                     <li class="b-b ps-3">
                                         <div class="d-flex align-items-center">
-                                            <div class="me-4"><i class="fa-solid fa-play icon-bigger"></i></div>
+                                            <div class="me-4"><i class="fa-solid fa-play icon-bigger pointer"></i></div>
                                             <div>
                                                 <div>Video Playlist</div>
                                                 <div class="tex-smaller">1/7 Videos</div>
@@ -640,9 +638,9 @@
                                     <!-- li video 1/7 -->
                                     <li class="bb ps-3 g-b">
                                         <div class="d-flex align-items-center">
-                                            <div class="player-ul-number me-2 r-b">1</div>
+                                            <div class="player-ul-number me-2 r-b pointer">1</div>
                                             <img src="./img/default.webp" alt="sdd">
-                                            <div class="tex-small ms-2 r-t">
+                                            <div class="tex-small ms-2 r-t pointer">
                                                 <div>Overload Season 4 - official</div>
                                                 <div>Trailer 3 | AniTV</div>
                                             </div>
@@ -651,10 +649,10 @@
 
                                     <!-- li video 2/7 -->
                                     <li class="bb ps-3 g-b">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center pointer">
                                             <div class="player-ul-number me-2">2</div>
                                             <img src="./img/hqdefault (1).jpg" alt="sdd">
-                                            <div class="tex-small ms-2 b-t">
+                                            <div class="tex-small ms-2 b-t pointer">
                                                 <div>Rent A Girlfriend Season 2 -</div>
                                                 <div>Official Trailer | AniTV</div>
                                             </div>
@@ -663,10 +661,10 @@
 
                                     <!-- li video 3/7 -->
                                     <li class="bb ps-3 g-b">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center pointer">
                                             <div class="player-ul-number me-2">3</div>
                                             <img src="./img/hqdefault (1).jpg" alt="sdd">
-                                            <div class="tex-small ms-2 b-t">
+                                            <div class="tex-small ms-2 b-t pointer">
                                                 <div>Uncle From Another World</div>
                                                 <div>Official Trailer 2 | AniTV</div>
                                             </div>
@@ -675,10 +673,10 @@
 
                                     <!-- li video 4/7 -->
                                     <li class="bb ps-3 g-b">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center pointer">
                                             <div class="player-ul-number me-2">4</div>
                                             <img src="./img/hqdefault (1).jpg" alt="sdd">
-                                            <div class="tex-small ms-2 b-t">
+                                            <div class="tex-small ms-2 b-t pointer">
                                                 <div>Prima Doll - Official Trailer</div>
                                                 <div>AniTV</div>
                                             </div>
@@ -687,10 +685,10 @@
 
                                     <!-- li video 5/7 -->
                                     <li class="bb ps-3 g-b">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center pointer">
                                             <div class="player-ul-number me-2">5</div>
                                             <img src="./img/hqdefault (1).jpg" alt="sdd">
-                                            <div class="tex-small ms-2 b-t">
+                                            <div class="tex-small ms-2 b-t pointer">
                                                 <div>Shoot! Gol To The Future</div>
                                                 <div>Official Trailer | AniTV</div>
                                             </div>
@@ -699,10 +697,10 @@
 
                                     <!-- li video 6/7 -->
                                     <li class="bb ps-3 g-b">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center pointer">
                                             <div class="player-ul-number me-2">6</div>
                                             <img src="./img/hqdefault (1).jpg" alt="sdd">
-                                            <div class="tex-small ms-2 b-t">
+                                            <div class="tex-small ms-2 b-t pointer">
                                                 <div>Overload Season 4 - official</div>
                                                 <div>Trailer 3 | AniTV</div>
                                             </div>
@@ -711,10 +709,10 @@
 
                                     <!-- li video 7/7 -->
                                     <li class="bb ps-3 g-b">
-                                        <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center pointer">
                                             <div class="player-ul-number me-2">7</div>
                                             <img src="./img/hqdefault (1).jpg" alt="sdd">
-                                            <div class="tex-small ms-2 b-t">
+                                            <div class="tex-small ms-2 b-t pointer">
                                                 <div>Overload Season 4 - official</div>
                                                 <div>Trailer 3 | AniTV</div>
                                             </div>
@@ -829,9 +827,10 @@
             </section>
         </main>
 
-        <div class="top-weird "></div>
         <!-- FOOTER -->
         <footer class="r-b">
+
+            <!-- * quella freccetta bizzarra pre-footer * -->
             <div class="top-weird "></div>
 
             <div class="container">
@@ -855,9 +854,11 @@
                         <!-- col 5/5 -->
                         <div class="col-4 d-flex flex-column">
                             <h5 class="g-t">SUBSCRIBE TO NEWSLETTER</h5>
-                            <input type="email" id="email" placeholder="Email" v-model="newSubscribers"
-                            @keyup.enter="addNewSubscriber()" required>
-                            <button class="btn mt-2 b-b w-t btn-hover" v-on:click="addNewSubscriber()">SUBSCRIBE</button>
+                            <input type="email" placeholder="Email" 
+                            v-model="newEmailAddress"
+                            @keyup.enter="addNewSubscriber()"
+                            class="p-2 rounded nob">
+                            <button class="btn mt-2 b-b w-t p-2 btn-hover" v-on:click="addNewSubscriber()">SUBSCRIBE</button>
                         </div>
                     </div>
                 </div>
@@ -867,7 +868,7 @@
                 <div class="footer-company-bar mt-3 pb-4">
                     <div class="d-flex justify-content-between align-items-center" style="height: 4rem">
                         <img :src="images.logoFooter" alt="logo">
-                        <p class="m-0 g-t">C Anime Teck, Theme by HasnainDEV</p>
+                        <p class="m-0 g-t"> {{ webPageDesigner }} </p>
                     </div>
                 </div>
 
