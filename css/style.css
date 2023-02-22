@@ -1,5 +1,4 @@
 /*** HEADER ***/
-/* 1 */
 .header-nav-social,
 .header-nav-social img {
     height: 2.3rem;
@@ -47,7 +46,7 @@
 /* 6 */
 .player {
     height: 30rem;
-    color: white;
+    color: var(--white);
 }
 
 .player-main-img > img {
@@ -94,7 +93,6 @@
     border-radius: 3px;
 }
 
-
 /* 7 */
 .section-seven-card {
     height: 12rem;
@@ -107,7 +105,11 @@
 
 /*** FOOTER ***/
 footer a {
-    color: var(--white)
+    color: var(--grey)
+}
+
+.bbg {
+    border-bottom: 1px solid var(--grey);
 }
 
 
@@ -121,7 +123,7 @@ footer a {
 
 
 
-/*** ALL ***/
+/*************** ALL ***************/
 img {
     height: 100%;
 }
@@ -160,11 +162,25 @@ ul a {
 }
 
 .bb {
-    border-bottom: 1px solid black
+    border-bottom: 1px solid var(--black);
 }
 
 .pointer {
     cursor: pointer;
+}
+
+.text-bg-light {
+    padding: .3rem .8rem;
+    font-size: .9rem;
+    color: var(--black) !important;
+}
+
+.red {
+    color: var(--red) !important; 
+}
+
+.card {
+    border: none;
 }
 
 /* il velo scuro sulle img */
@@ -174,6 +190,7 @@ ul a {
     position: absolute;
     z-index: 1;
     background-color: rgba(0, 0, 0, .4);
+    border-radius: 4px;
 }
 /* le scritte sulle img SOPRA al velo scuro */
 .card-img-overlay {
@@ -181,16 +198,8 @@ ul a {
 }
 
 
-/*** COLORS ***/
-.bbg {
-    border-bottom: 1px solid lightgray;
-}
 
-.bgg {
-    background-color: lightgray;
-}
-
-/*** PROJECT PALETTE ***/
+/*************** PROJECT PALETTE ***************/
 :root {
     --red: #bf1d2e;
     --white: #ffffff;
@@ -234,29 +243,62 @@ ul a {
 }
 
 
-/*** HOVER ***/
-    /* TODO: arrow */
+/*************** HOVER ***************/
+    /* Hover - arrow */
+.chevys:hover {
+    background-color: var(--red);
+}
 
-    /* btn */
+    /* Hover - btn */
 footer .btn-hover:hover {
     color: var(--red);
     background-color: var(--white);
     border-color: var(--red);
 }
 
-    /* TODO: btn2 */
+    /* Hover - btn2 */
+.featured .card-img-overlay {
+    height: 50%;
+}
+.readmore:hover {
+    background-color: var(--black) !important;
+    color: var(--grey);
+}
 
-    /* TODO: categories */
+    /* Hover - categories */
+.posts {
+    position: absolute;
+    z-index: 2;
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    border: 1px solid var(--white);
+    font-size: 1rem;
+    text-align: center;
+}
 
-    /* link */
+.posts-container {
+    display: none;
+}
+
+.section-seven-card:hover .posts-container {
+    display: block;
+}
+
+.section-seven-card:hover .veil {
+    background-color: rgba(191, 29, 46, .8);
+}
+
+    /* Hover - link */
 footer a:hover {
     color: var(--black);
 }
-    /* menu */
+    /* Hover - menu */
 .header-nav a:hover {
     color: var(--red);
 }
-    /* socials */
+    /* Hover - socials */
 .social i:hover {
     background-color: var(--black);
     color: var(--white);
@@ -264,6 +306,33 @@ footer a:hover {
 
 
 
+
+
+/*** QUELLA COSA (K version) seeeeeeeee *.* ***/
+.top-weird {
+    width: 100%;
+    border: 2px solid var(--black);
+    position: relative;
+}
+
+.top-weird:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    
+    transform: rotate(90deg);
+    /* background-color: teal; */
+}
+
+.top-weird:after {
+    
+    border-color: transparent transparent transparent var(--black);
+    border-width: 18px;
+}
 
 
 /*** QUELLA COSA (from web) ***/
@@ -274,7 +343,6 @@ footer a:hover {
     position: relative;
     min-height: 200px;
 }
-
 
 .container:after,
 .container:before {
@@ -298,29 +366,3 @@ footer a:hover {
     border-color: transparent transparent transparent #a00;
     border-width: 11px;
 } */
-
-/*** QUELLA COSA (K version) seeeeeeeee *.* ***/
-.top-weird {
-    width: 100%;
-    border: 2px solid black;
-    position: relative;
-}
-
-.top-weird:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    
-    transform: rotate(90deg);
-    /* background-color: teal; */
-}
-
-.top-weird:after {
-    
-    border-color: transparent transparent transparent black;
-    border-width: 15px;
-}
