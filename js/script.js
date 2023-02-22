@@ -51,6 +51,13 @@ createApp({
                 },
             ],
 
+            // * MAIN - all "demo" & "December"
+            demoDec: {
+                demo : "fa-solid fa-user-large",
+                december : "fa-solid fa-calendar-days",
+
+            },
+
             // * FOOTER links
             footerLinks : [
                 {
@@ -72,13 +79,12 @@ createApp({
             ],
         }
     },
-    
+
     methods : {
 
         // raccolgo le email inserite
         addNewSubscriber() {
             alert("added " + this.newSubscribers); //ok! :)
-        }
-
+        },
     }
 }).mount("#my-app");

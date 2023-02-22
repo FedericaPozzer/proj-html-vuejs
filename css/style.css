@@ -35,6 +35,12 @@
     padding: .4rem;
 }
 
+/* 3 */
+.middle-card {
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
 /* 5 */
 .chevys {
     width: 1.6rem;
@@ -93,6 +99,14 @@
     border-radius: 3px;
 }
 
+.play {
+    font-size: 3rem;
+    color: var(--red);
+    position: absolute;
+    bottom: 47%;
+    left: 48%;
+}
+
 /* 7 */
 .section-seven-card {
     height: 12rem;
@@ -130,6 +144,10 @@ img {
 
 .img-container {
     height: 9.5rem;
+}
+
+body {
+    background-color: var(--white)
 }
 
 ul {
@@ -366,3 +384,7 @@ footer a:hover {
     border-color: transparent transparent transparent #a00;
     border-width: 11px;
 } */
+
+
+
+
