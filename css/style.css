@@ -1,4 +1,6 @@
+
 /*************** HEADER ***************/
+/* #region HEADER */
 
 .header-nav-social,
 .header-nav-social img {
@@ -25,9 +27,10 @@
 .header-logo-bar {
     border-bottom: 1px solid var(--grey);
 }
-
+/* #endregion HEADER */
 
 /*************** MAIN ***************/
+/* #region MAIN */
 
 /* Section 1 */
 .chev-section-one {
@@ -83,8 +86,13 @@
     margin-left: .5rem;
 }
 
-.player-ul {
-    height: 30rem;
+.playlist {
+    height: 4.5rem;
+    display: flex;
+}
+
+.player-ul ul {
+    height: 25.5rem;
     overflow: scroll;
 }
 
@@ -124,9 +132,12 @@
 .section-seven-card img {
     object-fit: cover;
 }
+/* #endregion MAIN */
 
 
 /*************** FOOTER ***************/
+/* #region FOOTER */
+
 footer a {
     color: var(--grey)
 }
@@ -134,13 +145,14 @@ footer a {
 .bbg {
     border-bottom: 1px solid var(--grey);
 }
-
+/* #endregion FOOTER */
 
 /* - *************************************************************************** - */
 /* - *************************************************************************** - */
 
 
 /*************** ALL ***************/
+/* #region ALL */
 
 body {
     background-color: var(--white)
@@ -216,9 +228,11 @@ ul a {
 .card-img-overlay {
     z-index: 2;
 }
+/* #endregion ALL */
 
 
 /*************** PROJECT PALETTE ***************/
+/* #region PP */
 
 :root {
     --red: #bf1d2e;
@@ -261,9 +275,11 @@ ul a {
 .b-b {
     background-color: var(--black);
 }
+/* #endregion PP */
 
 
 /*************** HOVER EFFECTS ***************/
+/* #region HOVER */
 
     /* Hover 1/7 - arrow */
 .chevys:hover {
@@ -324,9 +340,11 @@ footer a:hover {
     background-color: var(--black);
     color: var(--white);
 }
+/* #endregion HOVER */
 
 
 /*** QUELLA COSA (K version) ***/
+/* #region EFFECT */
 
 .top-weird {
     width: 100%;
@@ -352,10 +370,10 @@ footer a:hover {
     border-color: transparent transparent transparent var(--black);
     border-width: 18px;
 }
+/* #endregion EFFECT */
 
 
 /*** DEBUG ***/
-
 /* .db {
     border: 1px solid black;
 } */
